@@ -1,0 +1,168 @@
+
+/* /!\ La MAJ de ce fichier oblige la MAJ header.min.css */
+.logo-header{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.title{
+    font-size: x-large;
+    margin-top: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    list-style-type: circle; /*disc circle square*/
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link:hover{
+    color: #0d6efd;
+}
+.nav-link.active {
+    color: #0d6efd;
+    border-bottom: 5px solid #0d6efd !important;
+}
+
+.nav-admin {
+    position: absolute;
+    right: 0px;
+    right: 5.5%;
+    top: 13px;
+}
+
+.only-mobile{
+    display: none;
+}
+
+.main-container-fullscreen{
+    margin-top: 0px;
+    min-height: 100%;
+}
+
+.main-container{
+    margin-top: 70px;
+    min-height: 100%;
+}
+
+.dsp-inline {
+    display: inline;
+}
+
+.bg-theme-1{
+    background-color:#2f3d58;
+}
+.bg-theme{
+    background-color:#db4938;
+}
+.bg-theme-2{
+    background_color: #fdfdfd;
+}
+
+.container-photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 1rem 0;
+  }
+ .card-photo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 15rem auto;
+    height: 15rem;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 10px;
+    margin: auto;
+    overflow: hidden;
+  }
+  .card--avatar {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+  }
+  .card--title {
+    color: #222;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+  }
+  .card--link {
+    text-decoration: none;
+    background: #db4938;
+    color: #fff;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+  }
+
+@media only screen and (max-width: 768px) {
+    .main-container{
+        margin-top: 700px;
+        height: 100%;
+    }
+
+    .nav-menu {
+        z-index: 1;
+        position: fixed;
+        left: -100%;
+        top: 2.5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        left: 90%;
+    }
+
+    .only-mobile{
+        display: block;
+    }
+
+    .only-destop{
+        display: none;
+    }
+
+}

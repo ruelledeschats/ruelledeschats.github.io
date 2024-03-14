@@ -1,0 +1,23 @@
+{
+    "lang": "fr-fr",
+    "name": "Application : Ruelle des Chats",
+    "short_name": "Ruelle des Chats",
+    "description": "Projet visant à présenter au public, via l'exploitation de trois panneaux de médiation culturelle,l'emblématique Ruelle des Chats à Troyes",
+    "start_url": "index.html",
+    "background_color": "#fdfdfd",
+    "theme_color": "#db4938",
+    "orientation": "portrait-primary",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "icons/icon-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "icons/icon-48x48.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        }
+    ]
+}
