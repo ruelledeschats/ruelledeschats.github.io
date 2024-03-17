@@ -1,4 +1,4 @@
-const CACHE_NAME = `Ruelle-des-Chats-v0.0.alfa`;
+const CACHE_NAME = `Ruelle-des-Chats-v0.1.alfa`;
 
 // Use the install event to pre-cache all initial resources.
 self.addEventListener('install', event => {
@@ -23,9 +23,7 @@ self.addEventListener('install', event => {
       '/serviceWorker.js',
       '/js/app.js',
       '/index.html',
-      '/js/index.js',
       '/apropos.html',
-      '/lecteur.html',
       '/js/lecteur.js',
       '/css/lecteur.css',
       '/css/app/app.min.css',
@@ -40,12 +38,6 @@ self.addEventListener('install', event => {
       '/photos/1_photo.jpg',
       '/photos/2_photo.jpg',
       '/photos/3_photo.jpg',
-      '/photos/4_photo.jpg',
-      '/photos/5_photo.jpg',
-      '/photos/6_photo.jpg',
-      '/photos/7_photo.jpg',
-      '/photos/8_photo.jpg',
-      '/photos/9_photo.jpg',
     ]);
   })());
 });
