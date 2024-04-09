@@ -1,4 +1,4 @@
-const CACHE_NAME = `Ruelle-des-Chats-v0.1.alfa`;
+const CACHE_NAME = `Ruelle-des-Chats-v0.2.alfa`;
 
 // Use the install event to pre-cache all initial resources.
 self.addEventListener('install', event => {
